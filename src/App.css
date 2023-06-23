@@ -1,38 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700;600&Catamaran:wght@600;700&display=swap');
+
+
+
+/* Logo Text:   #65CD2B   (CMYK : 51,0,79,20)
+Logo Background:    #03300A    (CMYK : 94,0,79,81)
+
+If you want to use other shades of green:
+
+#93E14F   (CMYK : 35,0,65,12)
+#5BBB26    (CMYK : 58,0,83,14)
+
+Font of Logo: 
+
+Nourd Bold         Bolded
+
+Header Font:
+
+Catamaran Bold    Standard Format
+
+Body Text Font:
+
+Assistant Regular     Standard Format */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background: linear-gradient(90deg, rgba(147,225,79,1) 0%, rgba(83,146,48,1) 0%, rgba(39,92,27,1) 0%, rgba(24,74,20,1) 0%, rgba(15,62,16,1) 9%, rgba(3,48,10,1) 27%, rgba(3,48,10,1) 73%, rgba(15,62,16,1) 91%, rgba(24,74,20,1) 100%, rgba(39,92,27,1) 100%, rgba(83,146,48,1) 100%, rgba(147,225,79,1) 100%);
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vmin;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-header {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  background: linear-gradient(90deg, rgba(147,225,79,1) 0%, rgba(83,146,48,1) 0%, rgba(39,92,27,1) 0%, rgba(24,74,20,1) 0%, rgba(15,62,16,1) 9%, rgba(3,48,10,1) 27%, rgba(3,48,10,1) 73%, rgba(15,62,16,1) 91%, rgba(24,74,20,1) 100%, rgba(39,92,27,1) 100%, rgba(83,146,48,1) 100%, rgba(147,225,79,1) 100%);
+}
+
+.App-header a {
+  color: lightgray;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.App-header .App-logo {
+  height: 100px;
+}
+
+.App-header a:focus {
+  color: #65CD2B;
+}
+
+.App-header a:hover {
+  background-color: #93E14F;
+  color: black;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: calc(5vmin + 80px);
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh);
+}
+
+.preview-img {
+  height: 40vh;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.preview-img:first-child {
+  bottom: -40px;
+  left: 40px;
+}
+
+.preview-wrapper {
+  width: fit-content;
+  display: block;
+  margin-bottom: 100px;
+  transform: rotate3d(1, 1, 1, 332deg);
+}
+
+.main-header {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.icon {
+  display: none;
+}
+
+.title,
+.subtitle {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 700;
+  font-size: calc(30px + 2vmin);
+  color: #65CD2B;
+  margin: 0 0 20px 0;
+}
+
+.title {
+  max-width: 700px;
+}
+
+.subtitle {
+  color: #93E14F;
+  font-size: calc(20px + 2vmin);
+}
+
+.hashtag {
+  color: #93E14F;
+  font-size: calc(20px + 2vmin);
+  max-width: 700px;
+  margin: 0 0 20px 0;
+}
+
+.text {
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+  color: #65CD2B;
+  font-weight: 400;
+  margin: 5px;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .App-header {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-header a {
+    display: block;
+  }
+  
+  .header-right {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .preview-img {
+    height: 33vh;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .icon:hover + .header-right {
+    display: flex;
+  }
+
+  .main-header {
+    width:100vw;
   }
 }
