@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.90e0f999.css",
-    "main.js": "/static/js/main.1eb14f56.js",
-    "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
-    "static/media/LETSGO_EB Edits Transparent Background.svg": "/static/media/LETSGO_EB Edits Transparent Background.3b5ad2140fe9162875be80c90b69033f.svg",
-    "index.html": "/index.html",
-    "main.90e0f999.css.map": "/static/css/main.90e0f999.css.map",
-    "main.1eb14f56.js.map": "/static/js/main.1eb14f56.js.map",
-    "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
+    "main.css": "/LetsGo.io.github.io/static/css/main.90e0f999.css",
+    "main.js": "/LetsGo.io.github.io/static/js/main.358c701d.js",
+    "static/js/787.71e672d5.chunk.js": "/LetsGo.io.github.io/static/js/787.71e672d5.chunk.js",
+    "static/media/LETSGO_EB Edits Transparent Background.svg": "/LetsGo.io.github.io/static/media/LETSGO_EB Edits Transparent Background.3b5ad2140fe9162875be80c90b69033f.svg",
+    "index.html": "/LetsGo.io.github.io/index.html",
+    "main.90e0f999.css.map": "/LetsGo.io.github.io/static/css/main.90e0f999.css.map",
+    "main.358c701d.js.map": "/LetsGo.io.github.io/static/js/main.358c701d.js.map",
+    "787.71e672d5.chunk.js.map": "/LetsGo.io.github.io/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90e0f999.css",
-    "static/js/main.1eb14f56.js"
+    "static/js/main.358c701d.js"
   ]
 }
