@@ -95,6 +95,7 @@ Assistant Regular     Standard Format */
   border-radius: 10px;
   margin: 10px;
   position: relative;
+  transform: rotate3d(1, 1, 1, 332deg);
 }
 
 .preview-img:first-child {
@@ -103,10 +104,13 @@ Assistant Regular     Standard Format */
 }
 
 .preview-wrapper {
-  width: fit-content;
+  width: 65%;
   display: block;
   margin-bottom: 100px;
-  transform: rotate3d(1, 1, 1, 332deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .main-header {
@@ -182,6 +186,7 @@ Assistant Regular     Standard Format */
 
   .App-header a {
     display: block;
+    cursor: pointer;
   }
   
   .header-right {

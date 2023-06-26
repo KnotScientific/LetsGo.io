@@ -1,0 +1,27 @@
+.signup-background-div{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.signup-top-text{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-size: calc(15px + 2vmin);
+    color: #65CD2B;
+    text-align: center;
+}
+
+.signup-input{
+    width: 80%;
+    margin-bottom: 1%;
+}
+
+.signup-submit-button{
+    min-width: 20vw;
+    height: 4.5vh;
+    cursor: pointer;
+}

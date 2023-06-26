@@ -4,6 +4,7 @@ import lightpic from './light.png';
 import './App.css';
 import { useRef } from 'react';
 import Privacy from './Privacy';
+import SignUpForm from './SignUpForm';
 
 function App() {
 
@@ -12,7 +13,6 @@ function App() {
   const aboutRef = useRef();
   const contactRef = useRef();
   const modalRef = useRef();
-
 
   return (
     <div className="App" ref={homeRef}>
@@ -40,6 +40,7 @@ function App() {
         <div className='preview-wrapper'>
           <img className="preview-img" src={darkpic} />
           <img className="preview-img" src={lightpic} ref={featureRef} />
+          <SignUpForm />
         </div>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "20px" }}>
           <p className='subtitle'>
@@ -59,8 +60,8 @@ function App() {
           </div>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "start", margin: "20px" }}>
           <ol className='text'>
-  <li> <p>Host or Join a Dining Room</p></li>
-  <li><p>Be presented with great restaurants in your city</p></li>
+            <li> <p>Host or Join a Dining Room</p></li>
+            <li><p>Be presented with great restaurants in your city</p></li>
             <li><p>Swipe right to say YES</p></li>
             <li><p>Swipe left to say NO</p></li>
             <li><p>It's a match when everyone swipes right</p></li>
