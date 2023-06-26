@@ -29,7 +29,12 @@ export default function SignUpForm(){
                 body: JSON.stringify(FormInfo.current)
             })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => {
+                if (data.success){
+                    alert("success!")
+                    window.location.reload()
+                }
+            })
         }
     }
 
