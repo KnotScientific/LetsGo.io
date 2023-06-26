@@ -1,4 +1,6 @@
 import logo from './LETSGO_EB Edits Transparent Background.svg';
+import darkpic from './dark.png';
+import lightpic from './light.png';
 import './App.css';
 import { useRef } from 'react';
 import Privacy from './Privacy';
@@ -36,8 +38,8 @@ function App() {
           <p className='hashtag'>#healhangry</p>
         </div>
         <div className='preview-wrapper'>
-          <img className="preview-img" src="/dark.png" />
-          <img className="preview-img" src="/light.png" ref={featureRef} />
+          <img className="preview-img" src={darkpic} />
+          <img className="preview-img" src={lightpic} ref={featureRef} />
         </div>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "20px" }}>
           <p className='subtitle'>
@@ -56,12 +58,14 @@ function App() {
             <p className='text'>to discover new restaurants and enhance the social benefits associated with group dining</p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "start", margin: "20px" }}>
-            <p>Host or Join a Dining Room</p>
-            <p>Be presented with great restaurants in your city</p>
-            <p>Swipe right to say YES</p>
-            <p>Swipe left to say NO</p>
-            <p>It's a match when everyone swipes right</p>
-            <p>Make sure to add your friends!</p>
+          <ol className='text'>
+  <li> <p>Host or Join a Dining Room</p></li>
+  <li><p>Be presented with great restaurants in your city</p></li>
+            <li><p>Swipe right to say YES</p></li>
+            <li><p>Swipe left to say NO</p></li>
+            <li><p>It's a match when everyone swipes right</p></li>
+            <li><p>Make sure to add your friends!</p></li>
+            </ol>
           </div>
         </div>
         <div ref={aboutRef} style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "20px" }}>
