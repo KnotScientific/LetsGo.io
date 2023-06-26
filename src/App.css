@@ -132,6 +132,10 @@ Assistant Regular     Standard Format */
   max-width: 90vw;
 }
 
+.title > span {
+  color: #93E14F;
+}
+
 .subtitle {
   color: #93E14F;
   font-size: calc(20px + 2vmin);

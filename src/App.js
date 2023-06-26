@@ -34,7 +34,7 @@ function App() {
       </header>
       <div className='App-body'>
         <div className='title-wrapper'>
-          <p className='title'>A revolutionary app for social dining, taking the stress and anxiety out of the most important decision of the day - where to eat</p>
+          <p className='title'>A revolutionary app for social dining, taking the stress and anxiety out of the most important decision of the day - <span>where to eat</span></p>
           <p className='hashtag'>#healinghangry</p>
         </div>
         <div className='preview-wrapper'>
