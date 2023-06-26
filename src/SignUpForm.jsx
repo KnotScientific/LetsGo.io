@@ -16,15 +16,20 @@ export default function SignUpForm(){
     const submit = () => {
         if (!sending){
             setSending(true)
-            const form = new FormData()
             for (const [key, value] of Object.entries(FormInfo.current)){
                 if (!value.length){
                     alert(`${key} field empty!`)
                     setSending(false)
                     return
                 }
-                form.append(key, value)
             }
+            fetch("http://localhost:5000/send", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(FormInfo.current)
+            })
+            .then(res => res.json())
+            .then(data => console.log(data))
         }
     }
 
