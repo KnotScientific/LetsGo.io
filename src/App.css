@@ -60,8 +60,15 @@ Assistant Regular     Standard Format */
   border-radius: 4px;
 }
 
-.App-header .App-logo {
+.App-header {
   height: 100px;
+}
+
+.App-logo {
+  width: 175px; 
+  height: 175px; 
+  object-fit: cover;
+  object-position: 25% 25%; 
 }
 
 .App-header a:focus {
@@ -122,7 +129,7 @@ Assistant Regular     Standard Format */
 }
 
 .title {
-  max-width: 700px;
+  max-width: 90vw;
 }
 
 .subtitle {
@@ -152,6 +159,15 @@ Assistant Regular     Standard Format */
   flex-direction: column;
   padding: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 750px) and (min-width: 501px) {
+  .App-logo {
+    width: calc(120px - 2vmin);; 
+    height: calc(120px - 2vmin);; 
+    object-fit: cover;
+    object-position: 25% 25%; 
+  }  
 }
 
 @media screen and (max-width: 500px) {

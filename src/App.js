@@ -34,8 +34,8 @@ function App() {
       </header>
       <div className='App-body'>
         <div className='title-wrapper'>
-          <p className='title'>The app that helps you and your friends choose restaurants</p>
-          <p className='hashtag'>#healhangry</p>
+          <p className='title'>A revolutionary app for social dining, taking the stress and anxiety out of the most important decision of the day - where to eat</p>
+          <p className='hashtag'>#healinghangry</p>
         </div>
         <div className='preview-wrapper'>
           <img className="preview-img" src={darkpic} />
@@ -43,7 +43,7 @@ function App() {
         </div>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "20px" }}>
           <p className='subtitle'>
-            What is LetsGo?
+            What is LetsGO?
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "start", margin: "20px" }}>
             <p className='text'>LetsGO was founded by a team of entrepreneurs who had an answer to every question that faced them, except one...</p>
