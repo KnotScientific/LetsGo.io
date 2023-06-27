@@ -31,7 +31,7 @@ export default function SignUpForm(){
             .then(res => res.json())
             .then(data => {
                 if (data.success){
-                    alert("success!")
+                    alert("Success!")
                     window.location.reload()
                 }
             })
@@ -45,7 +45,7 @@ export default function SignUpForm(){
             <input type="text" placeholder="Name" className="signup-input" onChange={(e) => FormInfo.current.name = e.target.value}/>
             <input type="email" placeholder="Email" className="signup-input" onChange={(e) => FormInfo.current.email = e.target.value}/>
             <input type="text" placeholder="City" className="signup-input" onChange={(e) => FormInfo.current.city = e.target.value}/>
-            <input type="number" placeholder="Age" className="signup-input" onChange={(e) => FormInfo.current.age = e.target.value}/>
+            <input type="number" min={0} placeholder="Age" className="signup-input" onChange={(e) => FormInfo.current.age = e.target.value}/>
             <input type="text" placeholder="Gender" className="signup-input" onChange={(e) => FormInfo.current.gender = e.target.value}/>
             <select defaultValue="Android" className="signup-input" onChange={(e) => FormInfo.current.PhoneOS = e.target.value}>
                 <option value="Android">Android</option>
