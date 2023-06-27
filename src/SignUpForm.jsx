@@ -52,7 +52,7 @@ export default function SignUpForm(){
                 <option value="iOS">iOS</option>
                 <option value="other">other</option>
             </select>
-            <button className="signup-submit-button" onClick={submit}>Submit</button>
+            <button className="signup-submit-button" onClick={submit}>{sending ? <div className="letter-changer"></div> : "Submit"}</button>
             </div>
         </div>
     )

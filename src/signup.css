@@ -53,3 +53,27 @@ width: 50%;
           margin-top: 40px;
       }    
 }
+
+@keyframes changeLetter {
+    0% {
+      content: "Sending .";
+    }
+    50% {
+       content: "Sending ..";
+    }
+    100% {
+        content: "Sending ...";
+    }
+  }
+
+  .letter-changer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+.letter-changer::after {
+    content: '';
+    animation: changeLetter 3s linear infinite;
+}
