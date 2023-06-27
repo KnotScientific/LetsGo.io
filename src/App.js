@@ -37,10 +37,12 @@ function App() {
           <p className='title'>A revolutionary app for social dining, taking the stress and anxiety out of the most important decision of the day - <span>where to eat</span></p>
           <p className='hashtag'>#healinghangry</p>
         </div>
+        <div className='two-col'>
         <div className='preview-wrapper'>
           <img className="preview-img" src={darkpic} />
           <img className="preview-img" src={lightpic} ref={featureRef} />
-          <SignUpForm />
+        </div>
+        <SignUpForm />
         </div>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "20px" }}>
           <p className='subtitle'>

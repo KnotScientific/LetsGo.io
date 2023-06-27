@@ -9,19 +9,47 @@
 
 .signup-top-text{
     font-family: 'Catamaran', sans-serif;
-    font-weight: 700;
-    font-size: calc(15px + 2vmin);
-    color: #65CD2B;
+    font-size: calc(20px);
+    color: white;
     text-align: center;
 }
 
 .signup-input{
-    width: 80%;
+    width: 20vw;
+    width: 100%;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
     margin-bottom: 1%;
 }
 
 .signup-submit-button{
+    margin-top: 10px;
     min-width: 20vw;
     height: 4.5vh;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
     cursor: pointer;
+    text-transform: uppercase;
+    background-color: #93E14F;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-color: rgb(142, 187, 202);
+border-radius: 5px;
+width: 50%;
+    padding: 0px 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .signup-top-text{
+        margin-top: 20px;
+      }
+      .form-wrapper{
+          margin-top: 40px;
+      }    
 }

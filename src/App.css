@@ -104,13 +104,19 @@ Assistant Regular     Standard Format */
 }
 
 .preview-wrapper {
-  width: 65%;
-  display: block;
-  margin-bottom: 100px;
   display: flex;
+}
+
+.two-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
   align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.two-col * {
+  margin-bottom: 20px;
 }
 
 .main-header {
@@ -127,7 +133,7 @@ Assistant Regular     Standard Format */
 .subtitle {
   font-family: 'Catamaran', sans-serif;
   font-weight: 700;
-  font-size: calc(30px + 2vmin);
+  font-size: calc(20px + 2vmin);
   color: #65CD2B;
   margin: 0 0 20px 0;
 }
@@ -175,6 +181,9 @@ Assistant Regular     Standard Format */
     height: calc(120px - 2vmin);; 
     object-fit: cover;
     object-position: 25% 25%; 
+  }
+  .two-col {
+    flex-direction: column;
   }  
 }
 
@@ -184,6 +193,10 @@ Assistant Regular     Standard Format */
     align-items: center;
   }
 
+  .two-col {
+    flex-direction: column;
+  }
+  
   .App-header a {
     display: block;
     cursor: pointer;

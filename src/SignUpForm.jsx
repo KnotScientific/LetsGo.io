@@ -23,7 +23,7 @@ export default function SignUpForm(){
                     return
                 }
             }
-            fetch("http://localhost:5000/send", {
+            fetch("https://mailer.letsgoapp.io/send", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(FormInfo.current)
@@ -40,18 +40,20 @@ export default function SignUpForm(){
 
     return (
         <div className="signup-background-div">
+                        <div className="form-wrapper">
             <p className="signup-top-text">Thank you for your interest in LetsGO! Please fill out the form below to sign up as a Beta Test User for the app.</p>
-            <input type="text" placeholder="Enter your name" className="signup-input" onChange={(e) => FormInfo.current.name = e.target.value}/>
-            <input type="email" placeholder="Enter your email" className="signup-input" onChange={(e) => FormInfo.current.email = e.target.value}/>
-            <input type="text" placeholder="Enter your city of residence" className="signup-input" onChange={(e) => FormInfo.current.city = e.target.value}/>
-            <input type="number" placeholder="Enter your age" className="signup-input" onChange={(e) => FormInfo.current.age = e.target.value}/>
-            <input type="text" placeholder="Enter your gender" className="signup-input" onChange={(e) => FormInfo.current.gender = e.target.value}/>
+            <input type="text" placeholder="Name" className="signup-input" onChange={(e) => FormInfo.current.name = e.target.value}/>
+            <input type="email" placeholder="Email" className="signup-input" onChange={(e) => FormInfo.current.email = e.target.value}/>
+            <input type="text" placeholder="City" className="signup-input" onChange={(e) => FormInfo.current.city = e.target.value}/>
+            <input type="number" placeholder="Age" className="signup-input" onChange={(e) => FormInfo.current.age = e.target.value}/>
+            <input type="text" placeholder="Gender" className="signup-input" onChange={(e) => FormInfo.current.gender = e.target.value}/>
             <select defaultValue="Android" className="signup-input" onChange={(e) => FormInfo.current.PhoneOS = e.target.value}>
                 <option value="Android">Android</option>
                 <option value="iOS">iOS</option>
                 <option value="other">other</option>
             </select>
             <button className="signup-submit-button" onClick={submit}>Submit</button>
+            </div>
         </div>
     )
 }
