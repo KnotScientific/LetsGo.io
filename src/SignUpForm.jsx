@@ -45,7 +45,15 @@ export default function SignUpForm(){
             <input type="text" placeholder="Name" className="signup-input" onChange={(e) => FormInfo.current.name = e.target.value}/>
             <input type="email" placeholder="Email" className="signup-input" onChange={(e) => FormInfo.current.email = e.target.value}/>
             <input type="text" placeholder="City" className="signup-input" onChange={(e) => FormInfo.current.city = e.target.value}/>
-            <input type="number" min={0} placeholder="Age" className="signup-input" onChange={(e) => FormInfo.current.age = e.target.value}/>
+            <select defaultValue="" placeholder="Age" className="signup-input" onChange={(e) => FormInfo.current.age = e.target.value}>
+                <option value=""></option>
+                <option value="15-19">15-19</option>
+                <option value="20-25">20-25</option>
+                <option value="26-32">26-32</option>
+                <option value="33-39">33-39</option>
+                <option value="40-50">40-50</option>
+                <option value="51+">51+</option>
+            </select>
             <input type="text" placeholder="Gender" className="signup-input" onChange={(e) => FormInfo.current.gender = e.target.value}/>
             <select defaultValue="Android" className="signup-input" onChange={(e) => FormInfo.current.PhoneOS = e.target.value}>
                 <option value="Android">Android</option>
