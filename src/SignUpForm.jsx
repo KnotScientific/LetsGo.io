@@ -38,6 +38,8 @@ export default function SignUpForm(){
         }
     }
 
+    console.log(FormInfo)
+
     return (
         <div className="signup-background-div">
                         <div className="form-wrapper">
@@ -45,8 +47,8 @@ export default function SignUpForm(){
             <input type="text" placeholder="Name" className="signup-input" onChange={(e) => FormInfo.current.name = e.target.value}/>
             <input type="email" placeholder="Email" className="signup-input" onChange={(e) => FormInfo.current.email = e.target.value}/>
             <input type="text" placeholder="City" className="signup-input" onChange={(e) => FormInfo.current.city = e.target.value}/>
-            <select defaultValue="" placeholder="Age" className="signup-input" onChange={(e) => FormInfo.current.age = e.target.value}>
-                <option value=""></option>
+            <select defaultValue="Age" required className="signup-input" onChange={(e) => FormInfo.current.age = e.target.value}>
+                <option value="" hidden disabled>Age</option>
                 <option value="15-19">15-19</option>
                 <option value="20-25">20-25</option>
                 <option value="26-32">26-32</option>
