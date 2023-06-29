@@ -38,8 +38,6 @@ export default function SignUpForm(){
         }
     }
 
-    console.log(FormInfo)
-
     return (
         <div className="signup-background-div">
                         <div className="form-wrapper">
