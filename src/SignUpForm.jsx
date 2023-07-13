@@ -8,8 +8,9 @@ export default function SignUpForm(){
         email: "",
         city: "",
         age: "",
+        contact: "Individual",
         gender: "",
-        PhoneOS: "Android"
+        PhoneOS: "Android",
     })
     const [sending, setSending] = useState(false)
 
@@ -53,6 +54,10 @@ export default function SignUpForm(){
                 <option value="33-39">33-39</option>
                 <option value="40-50">40-50</option>
                 <option value="51+">51+</option>
+            </select>
+            <select defaultValue="Individual" className="signup-input" onChange={(e) => FormInfo.current.contact = e.target.value}>
+                <option selected value="Individual">Individual</option>
+                <option value="Restaurant">Restaurant</option>
             </select>
             <input type="text" placeholder="Gender" className="signup-input" onChange={(e) => FormInfo.current.gender = e.target.value}/>
             <select defaultValue="Android" className="signup-input" onChange={(e) => FormInfo.current.PhoneOS = e.target.value}>
